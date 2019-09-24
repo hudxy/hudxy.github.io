@@ -1,0 +1,254 @@
+/* Vertical Navbar Styles */
+.vertical-nav {
+  min-width: 15rem;
+  width: 15rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+  background: white;
+  background: -webkit-linear-gradient(to right, white, #44fc23);
+  background: linear-gradient(to bottom right, white, #FFA07A);
+  font-family: "Courier", Courier, monospace;
+}
+/* Personal Name on Navbar Style */
+#me {
+  text-align: center;
+}
+
+/* Entry on Nav Bar Styles*/
+.nav-item {
+  height: 100%;
+  width: 100%;
+}
+/* Selected Nav Bar Styles*/
+.highlight {
+  height: 90%;
+  width: 1.5%;
+  background-color: lightgrey;
+  float: left;
+}
+/* Selected Nav Bar Styles*/
+#content .current {
+  background-color: #475877;
+}
+/* Animation for hovering over navbar */
+/* army green hex: #4b5320 */
+.nav-item:hover  .highlight {
+  background-color: #475877;
+  -webkit-animation-name: highlighter;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease;
+}
+@-webkit-keyframes highlighter {
+  from {background-color: lightgrey;}
+  to {background-color: #475877;}
+}
+
+#currentworks {
+  border-style: solid;
+  text-align: center;
+  height: 100% + 20px;
+  width: 30%;
+  background: linear-gradient(to bottom right, white, #FFA07A);
+  float: left;
+}
+
+#works {
+  margin-left: 15rem;
+  margin-right: 15rem;
+  height: 550px;
+}
+
+#readscarousel {
+  text-align: center;
+  border-style: solid;
+  background: linear-gradient(to bottom right, white, #FFA07A);
+  height: 590px;
+  width: 30%;
+  float: right;
+}
+
+
+#welcome{
+  position: relative;
+}
+#welcometxt {
+  position: absolute;
+  color: white;
+}
+
+.footer {
+  bottom: 0;
+  right: 0;
+  position: fixed;
+}
+
+.progress-bar {
+  background-color: #FFA07A;
+}
+
+.skillname {
+  margin-bottom: 0;
+}
+
+.carousel-item {
+  height: 500px;
+  text-align: relative;
+}
+
+.carousel-item img {
+    position: center;
+    min-height: 300px;
+}
+
+.contact {
+  text-align: center;
+}
+
+/* General Body Styles */
+body {
+  /*font-family: "New Courier", Courier, monospace;*/
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 15rem;
+  overflow-x: hidden;
+
+}
+
+/* Reactive CSS componenets */
+@media only screen and (max-width: 767px) {
+
+  .vertical-nav {
+    display: none;
+  }
+  body {
+    margin-left: 0rem;
+  }
+  #works {
+  margin-left: 0rem;
+  margin-right: 0rem;
+  }
+  #readscarousel {
+    float: none;
+    width: 100%
+  }
+  #currentworks {
+    float: none;
+    width: 100%
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  .vertical-nav {
+    min-width: 11rem;
+    width: 11rem;
+  }
+
+  body {
+    margin-left: 11rem;
+  }
+  #works {
+  margin-left: 3rem;
+  margin-right: 0rem;
+  }
+  #readscarousel {
+    float: none;
+    width: 400px;
+
+  }
+  #currentworks {
+    float: none;
+    width: 400px;
+
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+
+
+  .vertical-nav {
+    min-width: 15rem;
+    width: 15rem;
+  }
+
+  body {
+    margin-left: 15rem;
+  }
+
+  #works {
+  margin-left: 15rem;
+  margin-right: 15rem;
+  }
+  #readscarousel {
+    float: right;
+    width: 400px;
+  }
+  #currentworks {
+    float: left;
+    width: 400px;
+  }
+
+}
+
+
+/* for toggle behavior */
+/*
+#sidebar.active {
+  margin-left: -17rem;
+}
+
+#content.active {
+  width: 100%;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -17rem;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #content {
+    width: 100%;
+    margin: 0;
+  }
+  #content.active {
+    margin-left: 17rem;
+    width: calc(100% - 17rem);
+  }
+}
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSE
+* ==========================================
+*
+*/
+/*
+body {
+  background: #599fd9;
+  background: -webkit-linear-gradient(to right, #599fd9, #c2e59c);
+  background: linear-gradient(to right, #599fd9, #c2e59c);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.separator {
+  margin: 3rem 0;
+  border-bottom: 1px dashed #fff;
+}
+
+.text-uppercase {
+  letter-spacing: 0.1em;
+}
+
+.text-gray {
+  color: #aaa;
+}
+*/
